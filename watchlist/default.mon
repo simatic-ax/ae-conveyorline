@@ -1,0 +1,44 @@
+# ========================================
+# OVERVIEW - 3 CONVEYORS (1 Line)
+# ========================================
+
+# Operating Mode Control
+ManualMode
+GlobalOpMode._currentMode
+GlobalRelease.Signal
+
+# Simulation Control
+ConveyorSim.SimulationEnabled
+ConveyorSim._shiftRegister
+
+# Runtime Measurement
+P1.CurrentCycleTimeMs
+P1.AverageCycleTimeMs
+P1._cycleTimeMeasurement.MinMs
+P1._cycleTimeMeasurement.MaxMs
+P1._cycleTimeMeasurement.CycleCount
+
+# ========================================
+# MOTORS (1-3)
+# ========================================
+HW_Motor1_Run
+HW_Motor2_Run
+HW_Motor3_Run
+Conveyor1._startupStatus
+Conveyor1._rtd._internalDeliverState
+Conveyor1._rtr._internalReceiveState
+Conveyor1._stopPosition._itemInStopPosition
+
+# ========================================
+# CONVEYOR STATUS (1-3)
+# ========================================
+Conveyor1._stopPosition._itemInStopPosition
+Conveyor2._stopPosition._itemInStopPosition
+Conveyor3._stopPosition._itemInStopPosition
+
+# ========================================
+# SENSORS (1-3)
+# ========================================
+P0.EffectiveStopSensor1
+P0.EffectiveStopSensor2
+P0.EffectiveStopSensor3
