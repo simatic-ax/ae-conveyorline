@@ -7,7 +7,7 @@
     "name": "@simatic-ax/ae-conveyorline",
     "version": "0.0.0-placeholder",
     "dependencies": {
-      "@simatic-ax/conveyor": "^1.0.1"
+      "@simatic-ax/conveyor": "1.0.1"
     },
     "devDependencies": {
       "@ax/sdk": "2510.20.0",
