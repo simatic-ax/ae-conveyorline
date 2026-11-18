@@ -30,7 +30,7 @@ catalogs:
   "@ax/simatic-ax": ^2510.0.0
 
 devDependencies:
-  "@ax/sdk": 2510.20.0
+  "@ax/sdk": 2510.22.0
   "@simatic-ax/snippetscollection": 1.1.0
 
 # Project variables
