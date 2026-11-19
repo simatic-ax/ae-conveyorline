@@ -7,7 +7,7 @@
     "name": "@simatic-ax/ae-conveyorline",
     "version": "0.0.0-placeholder",
     "dependencies": {
-      "@simatic-ax/conveyor": "1.0.1"
+      "@simatic-ax/conveyor": "2.0.1"
     },
     "devDependencies": {
       "@ax/sdk": "2510.22.0",
@@ -18,6 +18,63 @@
     }
   },
   "packages": {
+    "@ax-as/s7-clocks-lib": {
+      "name": "@ax-as/s7-clocks-lib",
+      "version": "12.0.86",
+      "integrity": "sha512-28XkiY4imQYfIBsVz9z4omdYzODqVLjleNAGG6X0FiaPpDKSfa1FFH0gitrajDLxSxUrBIqox5yNzPyJ19D5qQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/s7-clocks-lib/-/s7-clocks-lib-12.0.86.tgz",
+      "dependencies": {
+        "@ax-as/system-serde-lib": "^11.0.205"
+      }
+    },
+    "@ax-as/system-conversion-lib": {
+      "name": "@ax-as/system-conversion-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-wWf8ZdFEHECebFCBbKpZXppUGWXpsdpZM6xIxNtfBLJWcjqJKQXWg7SSg+Z1DFZlIrn3s0H/hN0wSkgWsyTeGA==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-conversion-lib/-/system-conversion-lib-11.0.232.tgz",
+      "dependencies": {}
+    },
+    "@ax-as/system-datetime-lib": {
+      "name": "@ax-as/system-datetime-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-sElSgp/pfnR+bpqwqsS9qgqUxlXi2ueQMxenGmyKnvCVI4DVzvT4FzByAhZ9345FUey1YF8iEjbBofOXFK56vQ==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-datetime-lib/-/system-datetime-lib-11.0.232.tgz",
+      "dependencies": {}
+    },
+    "@ax-as/system-math-lib": {
+      "name": "@ax-as/system-math-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-tu5qfNyuRjsGrsDJufYNC+J9pklb77S25qRCWOLd6J2y3OPlEp+hjh7bkc52nMpAWIptBhW/MvZhivBMNSf+Kw==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-math-lib/-/system-math-lib-11.0.232.tgz",
+      "dependencies": {}
+    },
+    "@ax-as/system-serde-lib": {
+      "name": "@ax-as/system-serde-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-2x6tnX01wV8blfXjt+b0nfT4b7jCELgDqpJjTbI5PaehCeSz2oESqxuJqiGFvt1bygVbbE1s3p2KYcS6DShJOg==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-serde-lib/-/system-serde-lib-11.0.232.tgz",
+      "dependencies": {
+        "@ax-as/system-strings-lib": "^11.0.232"
+      }
+    },
+    "@ax-as/system-strings-lib": {
+      "name": "@ax-as/system-strings-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-HTC3vR691CtIqhdlFdLZxijz+03jm1M0fnB3aaAL2MZ1w+9MwDMoYMrZmEAPx9UXY7gh4L7Qvdju0fyNUcdtRA==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-strings-lib/-/system-strings-lib-11.0.232.tgz",
+      "dependencies": {
+        "@ax-as/system-conversion-lib": "^11.0.232",
+        "@ax-as/system-datetime-lib": "^11.0.232",
+        "@ax-as/system-math-lib": "^11.0.232"
+      }
+    },
+    "@ax-as/system-timer-lib": {
+      "name": "@ax-as/system-timer-lib",
+      "version": "11.0.232",
+      "integrity": "sha512-Ic/L+puH3utQj8vC3/FWRjQPgv6MDNuiOrkT38nw8dq2UHlRgNE1/epCbIED1qpKKeNVq8xIwfN8bKqTXGf7Ug==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax-as/system-timer-lib/-/system-timer-lib-11.0.232.tgz",
+      "dependencies": {}
+    },
     "@ax/apax-build": {
       "name": "@ax/apax-build",
       "version": "2.2.60",
@@ -438,13 +495,6 @@
         "@ax/xlad-service": "1.5.1"
       }
     },
-    "@ax/simatic-clocks": {
-      "name": "@ax/simatic-clocks",
-      "version": "11.0.116",
-      "integrity": "sha512-RoZc+LeT2de5NkIb8TE6l4tdVssppUQukGNQkG9ddQ0hUP4fzmhEhd45wW6PlB1Es6BvXHw7qTbK4M2bsWi9sA==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/simatic-clocks/-/simatic-clocks-11.0.116.tgz",
-      "dependencies": {}
-    },
     "@ax/simatic-package-tool": {
       "name": "@ax/simatic-package-tool",
       "version": "2.0.20",
@@ -601,13 +651,6 @@
         "@ax/system-math": "^10.4.66"
       }
     },
-    "@ax/system-timer": {
-      "name": "@ax/system-timer",
-      "version": "10.4.66",
-      "integrity": "sha512-Hst6y2tz8/SRhy/h47xRW650RVGGjplWf+V4tNCapKIR00hlUO91kIEFYM3OjyNtfa+6uUYtKoUmuG0cMos4ww==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-timer/-/system-timer-10.4.66.tgz",
-      "dependencies": {}
-    },
     "@ax/target-llvm": {
       "name": "@ax/target-llvm",
       "version": "11.7.50",
@@ -733,35 +776,35 @@
     },
     "@simatic-ax/automationbase": {
       "name": "@simatic-ax/automationbase",
-      "version": "1.0.1",
-      "integrity": "sha512-tHl1atSeI2ZzZQ9fe/Ee65L/NYKtZcy0ARrVYKMa6mCdxVSuIfrPi83zhAIMCin04oVWjRm3rYO1035/sr7+Hw==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/automationbase/1.0.1/b0714a9688fea2a41b8ff33a0e0d31515e048912",
+      "version": "2.0.0",
+      "integrity": "sha512-hWeYX8iGf0oEk7n3bFU6kX6/YrCIRBo0TlWILbNxo8CPxYiEwcH8rYBiXIScybtCQTlNuYnBGGCfcNTfJRSWuA==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/automationbase/2.0.0/06cf300bf0cdc7dd2598ac88ddf8bc5875f93c72",
       "dependencies": {
-        "@ax/simatic-clocks": "^11.0.116",
-        "@ax/system-timer": "^10.4.66",
-        "@simatic-ax/io": "^11.0.0"
+        "@ax-as/s7-clocks-lib": "^12.0.86",
+        "@ax-as/system-timer-lib": "^11.0.232",
+        "@simatic-ax/io": "^12.0.0"
       }
     },
     "@simatic-ax/conveyor": {
       "name": "@simatic-ax/conveyor",
-      "version": "1.0.1",
-      "integrity": "sha512-W87euOA0lX6zVm+bpRdqUuo+V93mYdu7iFG40wlzxyHZoYrL9K2wVV3DPPeLyXeL6nICOrh1XIxEgW0byvGrXg==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/conveyor/1.0.1/7cda593419421f8d93d9e87e7fcabc04b6c76939",
+      "version": "2.0.1",
+      "integrity": "sha512-P6H0APaP8/M4mU4yBDEH8YNaUbmPyW7+xVVAoRT7ijoUMMdUdMzFwGbD4SNXfR0cEkrI3RO8Huyvwuizxn6gnA==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/conveyor/2.0.1/c0b72301ddd6cd99f639dbd8a5804b213a703f8c",
       "dependencies": {
-        "@ax/simatic-clocks": "^11.0.116",
-        "@ax/system-timer": "^10.4.66",
-        "@simatic-ax/automationbase": "^1.0.1",
-        "@simatic-ax/io": "^11.0.0"
+        "@ax-as/s7-clocks-lib": "^12.0.86",
+        "@ax-as/system-timer-lib": "^11.0.232",
+        "@simatic-ax/automationbase": "^2.0.0",
+        "@simatic-ax/io": "^12.0.0"
       }
     },
     "@simatic-ax/io": {
       "name": "@simatic-ax/io",
-      "version": "11.0.0",
-      "integrity": "sha512-S4yuFXXIEfv9QIbFS6JWDBCA+VMkZ/v2WorLDAaWzCtjL6pNDqvZClqkJ7ssXIA3Tntbe0PWPZOgChHJObyTYw==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/io/11.0.0/a6376e04d2d39c555f1a546f0b513aaacf924f3d",
+      "version": "12.0.0",
+      "integrity": "sha512-5AGqn6fDAWUQtXi8QbvIJi1q6UbEHEAH3i5g5++pDnCV4E0Tq9+gZiI0z7jy+m6hUO2BK2h7FF3W8tL8seRwiQ==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/io/12.0.0/917b59d70b4fd24b980b7cd32493034e8ada1e28",
       "dependencies": {
-        "@ax/system-math": "^10.2.7",
-        "@ax/system-timer": "^10.2.7"
+        "@ax-as/system-math-lib": "^11.0.232",
+        "@ax-as/system-timer-lib": "^11.0.232"
       }
     },
     "@simatic-ax/snippetscollection": {

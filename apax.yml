@@ -51,4 +51,4 @@ scripts:
     - apax build
     - apax load
 dependencies:
-  "@simatic-ax/conveyor": 1.0.1
+  "@simatic-ax/conveyor": 2.0.1
